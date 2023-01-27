@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html class="account" lang="en">
+
+<head>
+	<title>Account</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-lp class="header">
+			<div class="header__container">
+				<a href="home.html" class="header__logo logo">
+					<img src="img/logo.png" alt="logo">
+					<p class="logo__text">DiscountsOnServices</p>
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<div class="menu__wrapper">
+							<ul class="menu__list">
+								<li class="menu__item menu__item_sub">
+									<button data-hover class="menu__sub-title">Subscriptions</button>
+									<ul data-da=".menu__wrapper, 767.98, last" class="menu__sub-list">
+										<li class="menu__sub-item"><a href="netflix.html" class="menu__sub-link">Netflix</a></li>
+										<li class="menu__sub-item"><a href="youtube.html" class="menu__sub-link">YouTube Premium</a></li>
+										<li class="menu__sub-item"><a href="spotify.html" class="menu__sub-link">Spotify</a></li>
+									</ul>
+								</li>
+								<li class="menu__item mobile"><a href="home.html" class="menu__link _icon-home">Home</a></li>
+								<li class="menu__item"><a href="about.html" class="menu__link _icon-about">About</a></li>
+								<li class="menu__item"><a href="faq.html" class="menu__link _icon-faq">FAQ</a></li>
+								<li class="menu__item"><a href="support.html" class="menu__link _icon-support">Support</a></li>
+							</ul>
+						</div>
+						<div class="menu__actions actions-header">
+							<div class="actions-header__body">
+								<div class="actions-header__social social social_header">
+									<a href="" class="social__link _icon-whatSapp"></a>
+									<a href="" class="social__link _icon-telegram"></a>
+								</div>
+								<div class="actions-header__languages languages languages_header">
+									<button data-hover class="languages__title">EN</button>
+									<ul class="languages__list">
+										<li class="languages__item"><a href="" class="languages__link languages__link_active">English</a></li>
+										<li class="languages__item"><a href="" class="languages__link">Ukraine</a></li>
+										<li class="languages__item"><a href="" class="languages__link">Poland</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="actions-header__buttons">
+								<button type="button" data-popup="#contactSupport" class="actions-header__button button button_blue">Support</button>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="header__burger">
+					<button type="button" class="icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="account-page">
+			<section class="account-page__info info-section">
+				<div class="info-section__container">
+					<div class="info-section__header">
+						<h2 class="info-section__title title title_gray title_left">Personal data management</h2>
+						<button data-da=".info-section__container, 767.98, last" type="button" data-popup="#logout" class="info-section__exit _icon-exit">Exit the office</button>
+					</div>
+					<div data-tabs class="info-section__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _icon-gear _tab-active">Account info</button>
+							<button type="button" class="tabs__title _icon-bag">My Subscriptions</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="tabs__wrapper">
+									<h5 class="tabs__sub-title">Account info</h5>
+									<form data-dev data-popup-message="#successfulCreateNewPass" class="tabs__form from">
+										<div class="form__items">
+											<div class="form__item">
+												<label class="form__label" for="id-accountInfo">ID user</label>
+												<div class="form__body form__body_id">
+													<input data-required data-validate id="id-accountInfo" autocomplete="off" type="text" name="form[email]" placeholder="123456789" class="form__input input input_id">
+												</div>
+											</div>
+											<div class="form__item">
+												<label class="form__label" for="name-accountInfo">How can I call you?</label>
+												<div class="form__body form__body_name">
+													<input data-required data-validate id="name-accountInfo" autocomplete="off" type="text" name="form[email]" placeholder="Enter your name" class="form__input input input_name">
+												</div>
+											</div>
+											<div class="form__item">
+												<label class="form__label" for="email-accountInfo">Email</label>
+												<div class="form__body form__body_email">
+													<input data-required data-validate id="email-accountInfo" autocomplete="off" type="text" name="form[email]" placeholder="Enter your e-mail" class="form__input input input_email">
+												</div>
+											</div>
+										</div>
+										<div class="form__actions">
+											<button type="submit" class="form__button button button_blue">Save changes</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__items">
+									<div class="tab__item my-subscriotion my-subscriotion_spotify">
+										<div class="my-subscriotion__header">
+											<div class="my-subscriotion__title">Spotify Premium Duo</div>
+										</div>
+										<div class="my-subscriotion__content">
+											<div class="my-subscriotion__description">Two separate Premium accounts for people who live together.</div>
+											<a href="spotify.html" class="my-subscriotion__change-plan">Change plan</a>
+										</div>
+									</div>
+									<div class="tab__item my-subscriotion my-subscriotion_youtube">
+										<div class="my-subscriotion__header">
+											<div class="my-subscriotion__title">YouTube Premium</div>
+										</div>
+										<div class="my-subscriotion__content">
+											<div class="my-subscriotion__description">YouTube and YouTube Music without ads, in the background and offline</div>
+											<a href="youtube.html" class="my-subscriotion__change-plan">Change plan</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="account-page__invite invite-section">
+				<div class="invite-section__container">
+					<div class="invite">
+						<div class="invite__content">
+							<div class="invite__header">
+								<div class="invite__title">Invite friends</div>
+								<div class="invite__text">
+									<p>Starting today up to 50% for NETFLIX, YOUTUBE, SPOTIFY subscriptions with a secure payment from PAYPAL</p>
+								</div>
+							</div>
+						</div>
+						<div class="invite__wrapper copy-link">
+							<div class="copy-link__label">Click on the link</div>
+							<div class="copy-link__link">
+								<a href="">Discounts On Services</a>
+								<button data-copy-to-clipboard="Copy to clipboard" class="copy-link__icon"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__main main-footer">
+				<div class="main-footer__container">
+					<div class="main-footer__column main-footer__column_main">
+						<a href="home.html" class="main-footer__logo">
+							<div class="main-footer__img">
+								<img src="img/logo.png" alt="logo">
+							</div>
+							<p>DiscountsOnServices</p>
+						</a>
+						<div class="main-footer__text">
+							<p>It's simple, fast and economical</p>
+						</div>
+					</div>
+					<div class="main-footer__column">
+						<div class="main-footer__label">Subscriptions</div>
+						<nav class="main-footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="netflix.html" class="menu-footer__link">Netflix</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="youtube.html" class="menu-footer__link">YouTube Premium</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="spotify.html" class="menu-footer__link">Spotify</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="main-footer__column">
+						<div class="main-footer__label">Site navigation</div>
+						<nav class="main-footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="about.html" class="menu-footer__link">About</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="faq.html" class="menu-footer__link">FAQ</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="support.html" class="menu-footer__link">Support</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="main-footer__column main-footer__column_last">
+						<div class="main-footer__social social social_footer">
+							<a href="" class="social__link _icon-whatSapp"></a>
+							<a href="" class="social__link _icon-telegram"></a>
+						</div>
+						<div class="main-footer__languages languages languages_footer">
+							<button data-hover class="languages__title">EN</button>
+							<ul class="languages__list">
+								<li class="languages__item"><a href="" class="languages__link languages__link_active">English</a></li>
+								<li class="languages__item"><a href="" class="languages__link">Ukraine</a></li>
+								<li class="languages__item"><a href="" class="languages__link">Poland</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copy copy-footer">
+				<div class="copy-footer__container">
+					<div class="copy-footer__item">Privacy Policy</div>
+					<div class="copy-footer__item">Copyright 2021 © All Rights Reserved</div>
+					<div class="copy-footer__item">Developed by</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="login" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Log in</div>
+					<div class="popup__label">New user? <button type="button" data-popup="#signup" href="">Create an account</button></div>
+				</div>
+				<form data-dev data-popup-message action="#" class="popup__form form">
+					<div class="form__items">
+						<div class="form__item">
+							<label class="form__label" for="email-login">Email Address</label>
+							<div class="form__body form__body_email">
+								<input data-required data-validate id="email-login" autocomplete="off" type="text" name="form[email]" placeholder="Enter your e-mail" class="form__input input input_email">
+							</div>
+						</div>
+						<div class="form__item">
+							<label class="form__label" for="pass-login">Password</label>
+							<div class="form__body form__body_password">
+								<input data-required data-validate id="pass-login" autocomplete="off" type="password" name="form[pass]" placeholder="*******" value="" class="form__input input input_password">
+								<button class="form__viewpass" type="button"></button>
+							</div>
+						</div>
+					</div>
+					<div class="form__actions form__actions_space-between">
+						<div class="form__link form__link_forgot-pass">
+							<button type="button" data-popup="#forgetPassword" href="">Forget Password?</button>
+						</div>
+						<button type="submit" class="form__button button button_blue">Log in</button>
+					</div>
+				</form>
+
+				<div class="popup__with-help with-help">
+					<div class="with-help__label"><span>Or sign in with</span></div>
+					<div class="with-help__action">
+						<a href="" class="with-help__button">
+							<img src="img/icons/g.png" alt="icon">
+						</a>
+						<a href="" class="with-help__button">
+							<img src="img/icons/f.svg" alt="icon">
+						</a>
+						<a href="" class="with-help__button">
+							<img src="img/icons/a.png" alt="icon">
+						</a>
+					</div>
+				</div>
+				<div class="popup__policy policy">
+					Protected by reCAPTCHA and subject to the Google
+					<a href="" class="policy__link">Privacy Policy</a> and
+					<a href="" class="policy__link policy__link_black">Terms of Service</a>.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="signup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Create an account</div>
+					<div class="popup__label">Already have an account? <button type="button" data-popup="#login" href="">Sign In</button></div>
+				</div>
+				<form data-dev data-popup-message="#emailVerification" action="#" class="popup__form form">
+					<div class="form__items">
+						<div class="form__item">
+							<label class="form__label" for="userName-signup">User name</label>
+							<div class="form__body form__body_user">
+								<input data-required data-validate id="userName-signup" autocomplete="off" type="text" name="form[name]" placeholder="Enter your name" class="form__input input input_email">
+							</div>
+						</div>
+						<div class="form__item">
+							<label class="form__label" for="email-signup">Email Address</label>
+							<div class="form__body form__body_email">
+								<input data-required data-validate id="email-signup" autocomplete="off" type="text" name="form[email]" placeholder="Enter your e-mail" class="form__input input input_email">
+							</div>
+						</div>
+						<div class="form__item">
+							<label class="form__label" for="pass-signup">Password</label>
+							<div class="form__body form__body_password">
+								<input data-required data-validate id="pass-signup" autocomplete="off" type="password" name="form[pass]" placeholder="*******" value="" class="form__input input input_password">
+								<button class="form__viewpass" type="button"></button>
+							</div>
+						</div>
+						<div class="form__checkbox checkbox">
+							<input id="check-signup" data-required data-validate class="checkbox__input" type="checkbox" value="1" name="form[check]">
+							<label for="check-signup" class="checkbox__label"><span class="checkbox__text policy policy_gray">By creating an account you agree to our <a href="" class="policy__link">Privacy Policy and Terms of Service.</a></span></label>
+						</div>
+					</div>
+					<div class="form__actions">
+						<button type="submit" class="form__button button button_blue">Sing up</button>
+					</div>
+				</form>
+				<div class="popup__with-help with-help">
+					<div class="with-help__label"><span>Or sign in with</span></div>
+					<div class="with-help__action">
+						<a href="" class="with-help__button">
+							<img src="img/icons/g.png" alt="icon">
+						</a>
+						<a href="" class="with-help__button">
+							<img src="img/icons/f.svg" alt="icon">
+						</a>
+						<a href="" class="with-help__button">
+							<img src="img/icons/a.png" alt="icon">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="emailVerification" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Email verification</div>
+					<div class="popup__label">Please enter the 6-digit verification code that was sent to name@gmail,com. The code is valid for 30 minutes.</div>
+				</div>
+				<form data-dev data-popup-message="#successfulRegistration" action="#" class="popup__form form">
+					<div class="form__items">
+						<div class="form__item">
+							<label class="form__label" for="code-emailVerification">Email verification code</label>
+							<div class="form__body form__body_code">
+								<input data-required data-validate id="code-emailVerification" autocomplete="off" type="text" name="form[code]" placeholder="XXXX" class="form__input input input_code">
+								<input type="reset" value="Resent code" class="form__reset">
+							</div>
+						</div>
+					</div>
+					<div class="form__actions">
+						<button type="submit" class="form__button button button_blue">Sing up</button>
+					</div>
+				</form>
+				<button type="button" href="" data-popup="#signup" class="popup__link">Didn’t receive the code?</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="successfulRegistration" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Successful registration</div>
+					<div class="popup__label">By optimizing our work and using internal tools, we were able to lower the prices while keeping the highest possible.</div>
+				</div>
+				<div class="popup__actions">
+					<button data-close type="submit" class="form__button button button_blue">Continue work</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="forgetPassword" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Forget Password</div>
+					<div class="popup__label">We will send reset code in this emaill.</div>
+				</div>
+
+				<form data-dev data-popup-message="#forgetVerificationCode" action="#" class="popup__form form">
+					<div class="form__items">
+						<div class="form__item">
+							<label class="form__label" for="email-forgetPassword">Email Address</label>
+							<div class="form__body form__body_email">
+								<input data-required data-validate id="email-forgetPassword" autocomplete="off" type="text" name="form[email]" placeholder="Enter your e-mail" class="form__input input input_email">
+							</div>
+						</div>
+					</div>
+					<div class="form__actions form__actions_space-between">
+						<button type="submit" class="form__button button button_blue">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="forgetVerificationCode" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Forget Password</div>
+					<div class="popup__label">We will send reset code in this emaill.</div>
+				</div>
+				<form data-dev data-popup-message="#forgetCreateNewPass" action="#" class="popup__form form">
+					<div class="form__items">
+						<div class="form__item">
+							<label class="form__label" for="code-forgetVerificationCode">Email verification code</label>
+							<div class="form__body form__body_code">
+								<input data-required data-validate id="code-forgetVerificationCode" autocomplete="off" type="text" name="form[name]" placeholder="XXXX" class="form__input input input_code">
+								<input type="reset" value="Resent code" class="form__reset">
+							</div>
+						</div>
+					</div>
+					<div class="form__actions">
+						<button type="submit" class="form__button button button_blue">Restore Password</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="forgetCreateNewPass" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Forget Password</div>
+					<div class="popup__label">Enter a new password.</div>
+				</div>
+				<form data-dev data-popup-message="#successfulCreateNewPass" action="#" class="popup__form form">
+					<div class="form__items form__items-sb">
+						<div class="form__item">
+							<label class="form__label" for="pass-forgetCreateNewPass">Password</label>
+							<div class="form__body form__body_password">
+								<input data-required data-validate id="pass-forgetCreateNewPass" autocomplete="off" type="password" name="form[pass]" placeholder="*******" value="" class="form__input input input_password">
+								<button class="form__viewpass" type="button"></button>
+							</div>
+						</div>
+						<div class="form__item">
+							<label class="form__label" for="confirm-forgetCreateNewPass">Confirm Password</label>
+							<div class="form__body form__body_password">
+								<input data-required data-validate id="confirm-forgetCreateNewPass" autocomplete="off" type="password" name="form[pass]" placeholder="*******" value="" class="form__input input input_password">
+								<button class="form__viewpass" type="button"></button>
+							</div>
+						</div>
+					</div>
+					<div class="form__actions form__actions_space-between">
+						<button type="submit" class="form__button button button_blue">Restore Password</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="successfulCreateNewPass" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Successful</div>
+					<div class="popup__label">By optimizing our work and using internal tools, we were able to lower the prices while keeping the highest possible.</div>
+				</div>
+				<div class="popup__actions">
+					<button data-close type="button" class="popup__button button button_blue">Continue work</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="logout" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Are you sure want to logout?</div>
+				</div>
+				<form data-dev data-popup-message="" action="#" class="popup__form form">
+					<div class="form__actions">
+						<button type="button" data-close class="form__button button button_border-blue">Cancel</button>
+						<button type="submit" class="form__button button button_blue">Yes, Logout</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="subscriptionApplication" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Subscription Application</div>
+				</div>
+				<form data-dev data-popup-message="#purchasePayment" action="#" class="popup__form form">
+					<div class="form__items">
+						<div class="form__item">
+							<label class="form__label" for="userName-subscriptionApplication">Enter your name</label>
+							<div class="form__body form__body_user">
+								<input data-required data-validate id="userName-subscriptionApplication" autocomplete="off" type="text" name="form[name]" placeholder="Enter your name" class="form__input input input_user">
+							</div>
+						</div>
+						<div class="form__item">
+							<label class="form__label" for="email-subscriptionApplication">E-mail</label>
+							<div class="form__body form__body_email">
+								<input data-required data-validate id="email-subscriptionApplication" autocomplete="off" type="text" name="form[email]" placeholder="Enter your e-mail" class="form__input input input_email">
+							</div>
+						</div>
+						<div class="form__item">
+							<label class="form__label" for="phone-subscriptionApplication">Phone</label>
+							<div class="form__body form__body_phone">
+								<input data-required data-validate id="phone-subscriptionApplication" autocomplete="off" name="form[phone]" placeholder="Enter your phone" class="form__input input input_phone">
+							</div>
+						</div>
+					</div>
+					<div class="form__actions">
+						<button type="submit" class="form__button button button_blue">Apply</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="purchasePayment" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Purchase payment</div>
+				</div>
+				<div class="popup__payment payment-buttons">
+					<a href="" class="payment-buttons__button">
+						<img src="img/icons/aPay.svg" alt="aPay">
+					</a>
+					<a href="" class="payment-buttons__button">
+						<img src="img/icons/gPay.svg" alt="gPay">
+					</a>
+				</div>
+				<form data-dev data-popup-message="#subscriptionPaid" action="#" class="popup__form form">
+					<div class="form__items">
+						<div class="form__item">
+							<label class="form__label" for="cardNumber-purchasePayment">Card Number</label>
+							<div class="form__body form__body_card">
+								<input data-required data-validate id="cardNumber-purchasePayment" autocomplete="off" type="text" name="form[card]" placeholder="1234 1234 1234 1234" class="form__input input input_card">
+							</div>
+						</div>
+						<div class="form__items-sb">
+							<div class="form__item">
+								<label class="form__label" for="date-purchasePayment">Expiration Date</label>
+								<div class="form__body form__body_date">
+									<input data-required data-validate id="date-purchasePayment" autocomplete="off" type="text" name="form[date]" placeholder="MM/ГГ" class="form__input input input_date">
+								</div>
+							</div>
+							<div class="form__item">
+								<label class="form__label" for="cvc-purchasePayment">СVC</label>
+								<div class="form__body form__body_cvc">
+									<input data-required data-validate id="cvc-purchasePayment" autocomplete="off" name="form[cvc]" placeholder="CVC" class="form__input input input_cvc">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form__actions">
+						<button type="submit" class="form__button button button_blue">Pay with card</button>
+						<div class="form__disclaimer">We do not collect information on your cards, everything is safe</div>
+					</div>
+				</form>
+				<div class="popup__alternative">
+					<div class="popup__header">
+						<div class="popup__title popup__title_small">Payment by crypto wallet</div>
+					</div>
+					<form data-dev data-popup-message="#purchasePaymentCrypto" action="#" class="popup__form form form_alternative">
+						<div class="form__items">
+							<div class="form__item">
+								<div class="form__label">Select currency</div>
+								<select class="form__sell-currency" name="form[sel]" data-class-modif="form">
+									<option value="1" selected>Bitcoin</option>
+									<option value="2">1 Bitcoin</option>
+									<option value="3">2 Bitcoin</option>
+									<option value="4">3 Bitcoin</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__actions">
+							<button type="submit" class="form__button button button_blue">Pay</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="purchasePaymentCrypto" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Purchase payment</div>
+				</div>
+				<div class="popup__alternative">
+					<div class="popup__header">
+						<div class="popup__title popup__title_small">Payment by crypto wallet</div>
+					</div>
+					<form data-dev data-popup-message="#purchasePaymentCryptoAdrress" action="#" class="popup__form form">
+						<div class="form__items">
+							<div class="form__item">
+								<div class="form__label">Choose the Blockhain Network</div>
+								<select class="form__sell-currency" name="form[sel]" data-class-modif="form">
+									<option value="1" selected>Bitckhain BTC network</option>
+									<option value="2">1 Bitckhain BTC network</option>
+									<option value="3">2 Bitckhain BTC network</option>
+									<option value="4">3 Bitckhain BTC network</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__actions">
+							<button type="submit" class="form__button button button_blue">Pay</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="purchasePaymentCryptoAdrress" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Purchase payment</div>
+				</div>
+				<div class="popup__alternative">
+					<div class="popup__header">
+						<div class="popup__title popup__title_small">Payment by crypto wallet</div>
+					</div>
+					<form data-dev data-popup-message="#subscriptionPaid" action="#" class="popup__form form">
+						<div class="form__items">
+							<div class="form__item form__item_info">The amount to be paid: <span>0.00158039 BTC</span></div>
+							<div class="form__item form__item_info">Blockchain: <span>BTC network</span></div>
+						</div>
+						<div class="form__link-copy copy-link copy-link_popup">
+							<div class="copy-link__label">You can copy the address:</div>
+							<div class="copy-link__link">
+								<a href="">3PGgmpAxfzyS728UytENU</a>
+								<button type="button" data-copy-to-clipboard="Copy to clipboard" class="copy-link__icon"></button>
+							</div>
+						</div>
+
+						<div class="form__actions">
+							<button type="submit" class="form__button button button_blue">ok</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="subscriptionPaid" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header popup__header_successful">
+					<div class="popup__image">
+						<img src="img/how/3.svg" alt="icon">
+					</div>
+					<div class="popup__title">Subscription paid</div>
+				</div>
+				<div class="popup__actions">
+					<button data-close class="popup__button button button_blue">Continue work</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contactSupport" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<span class="popup__action action-button"></span>
+				</button>
+				<div class="popup__header">
+					<div class="popup__title">Contact support</div>
+				</div>
+				<form data-dev data-popup-message="#successfulCreateNewPass" action="#" class="popup__form form">
+					<div class="form__items">
+						<div class="form__item">
+							<label class="form__label" for="userName-contactSupport">Enter your name</label>
+							<div class="form__body form__body_user">
+								<input data-required data-validate id="userName-contactSupport" autocomplete="off" type="text" name="form[name]" placeholder="Enter your name" class="form__input input input_user">
+							</div>
+						</div>
+						<div class="form__item">
+							<label class="form__label" for="email-contactSupport">E-mail</label>
+							<div class="form__body form__body_email">
+								<input data-required data-validate id="email-contactSupport" autocomplete="off" type="text" name="form[email]" placeholder="Enter your e-mail" class="form__input input input_email">
+							</div>
+						</div>
+						<div class="form__item">
+							<label class="form__label" for="question-contactSupport">Your message</label>
+							<div class="form__body form__body_textarea">
+								<textarea data-required data-validate autocomplete="off" name="form[]" placeholder="Enter your message" id="question-contactSupport" class="form__input input input_textarea"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="form__actions">
+						<button type="submit" class="form__button button button_blue">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230126193626"></script>
+</body>
+
+</html>

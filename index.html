@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «DiscountsOnServices»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «Discounts On Services»</h1>
+		<div class="rootpage__info">
+			Адаптивна верстка багатосторінкового сайту «DiscountsOnServices» виконана на чистому кросбраузерному коді, 
+			що відображається на показниках швидкості завантаження сторінки. 
+			Структура сайту написана за допомогою методології BEM, що дозволяє повторно використовувати блоки коду, 
+			також реалізований фейк вхід, реєстрація та відновлення пароля після успішного проходження валідації яких відкривається доступ до сторінки кабінету користувача. 
+			Валідація форм для кращої демонстрації була спрощена і проходиться після введення будь-якого символу, 
+			також у всі наявні строрінки та модальні вікна можна потрапити з цієї сторінки.
+		</div>
+		<h2>Готові сторінки:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Home</a></li>
+			<li><a target="_blank" href="about.html">About</a></li>
+			<li><a target="_blank" href="faq.html">FAQ</a></li>
+			<li><a target="_blank" href="support.html">Support</a></li>
+			<li><a target="_blank" href="netflix.html">Netflix</a></li>
+			<li><a target="_blank" href="youtube.html">YouTube</a></li>
+			<li><a target="_blank" href="spotify.html">Spotify</a></li>
+			<li><a target="_blank" href="account.html">Account</a></li>
+		</ol>
+		<h2>Попапи:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html#login">Login</a></li>
+			<li><a target="_blank" href="home.html#signup">Create an account (Signup)</a></li>
+			<li><a target="_blank" href="home.html#emailVerification">Email verification (Signup)</a></li>
+			<li><a target="_blank" href="home.html#successfulRegistration">Successful registration (Signup)</a></li>
+			<li><a target="_blank" href="home.html#forgetPassword">Forget password</a></li>
+			<li><a target="_blank" href="home.html#forgetVerificationCode">Email verification (Forget password)</a></li>
+			<li><a target="_blank" href="home.html#forgetCreateNewPass">Create new password (Forget password)</a></li>
+			<li><a target="_blank" href="home.html#successfulCreateNewPass">Successful create new password (Forget password)</a></li>
+			<li><a target="_blank" href="home.html#logout">Logout</a></li>
+			<li><a target="_blank" href="home.html#subscriptionApplication">Subscription Application</a></li>
+			<li><a target="_blank" href="home.html#purchasePayment">Purchase payment</a></li>
+			<li><a target="_blank" href="home.html#purchasePaymentCrypto">Choose the Blockhain Network (Purchase payment)</a></li>
+			<li><a target="_blank" href="home.html#purchasePaymentCryptoAdrress">Crypto adrress (Purchase payment)</a></li>
+			<li><a target="_blank" href="home.html#subscriptionPaid">Subscription paid (Purchase payment)</a></li>
+			<li><a target="_blank" href="home.html#contactSupport">Contact support</a></li>
+		</ol>
+		<div class="rootpage__speed">
+			<div class="rootpage__image-ibg">
+				<img src="img/speed.jpg" alt="speed test">
+			</div>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #5e5373;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+	}
+
+	.rootpage__contacts:not(:last-child) {
+		margin-bottom: 30px;
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	.rootpage__speed {
+		align-self: stretch;
+		max-width: 1080px;
+	}
+	.rootpage__image-ibg {
+		position: relative;
+		padding-bottom: 62%;
+	}
+	.rootpage__image-ibg img{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+
+</style>
+
+</html>
